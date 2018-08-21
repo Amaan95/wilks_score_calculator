@@ -6,10 +6,8 @@ const Index = () => (
   <React.Fragment>
     <Header />
     <body>
-      <Card card_title="Wilks Score Calculator" />
-
-      <ResultCard />
-
+        <Card card_title="Wilks Score Calculator" />
+        <ResultCard />
     </body>
   </React.Fragment>
 );
