@@ -1,13 +1,13 @@
 import { MALE_COEFFS, FEMALE_COEFFS } from "consts";
 
 export enum Gender {
-  Male,
-  Female,
+  Male = "Male",
+  Female = "Female",
 }
 
 export enum WeightUnit {
-  Kilo,
-  Pound,
+  Kilo = "Kilo",
+  Pound = "Pound",
 }
 
 export function computeWilksScore(
