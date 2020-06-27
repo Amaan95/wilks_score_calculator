@@ -8,8 +8,8 @@ const Index = () => (
   <React.Fragment>
     <Header />
     <body>
-      <Card card_title="Wilks Score Calculator" />
-      <ResultCard />
+      <Card title="Wilks Score Calculator" />
+      <ResultCard score={50} />
     </body>
   </React.Fragment>
 );
