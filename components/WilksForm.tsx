@@ -32,14 +32,13 @@ class Form extends React.Component<Props, State> {
     };
   }
 
-  updateState(key, event) {
-    this.setState({ [key]: event.target.value });
-    console.log(key, event.target.value);
-  }
+  updateState = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const key = event.currentTarget.name as keyof State;
+    const value = event.currentTarget.value;
+    this.setState({ [key]: value } as any);
+  };
 
-  getScore(event) {
-    event.preventDefault();
-
+  getWilksScore = () => {
     let gender = this.state.gender;
     let unit = this.state.unit;
     var weight = parseInt(this.state.bodyweight);
@@ -47,7 +46,6 @@ class Form extends React.Component<Props, State> {
     let bench = parseInt(this.state.bench);
     let deadlift = parseInt(this.state.deadlift);
 
-    // get lift totals and convert to kg if units are pounds
     var lift_total = squat + bench + deadlift;
 
     if (unit === WeightUnit.Pound) {
@@ -57,42 +55,42 @@ class Form extends React.Component<Props, State> {
 
     var score = computeWilksScore(gender, weight, lift_total);
     this.setState({ wilksScore: score });
-  }
+  };
 
   render() {
     const form = (
-      <form onSubmit={this.getScore.bind(this)} className="ui form">
+      <form onSubmit={this.getWilksScore} className="ui form">
         <BinaryRadioInput
           label="Gender"
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
           options={["Male", "Female"]}
           values={["m", "f"]}
         />
         <BinaryRadioInput
           label="Unit"
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
           options={["Kilograms", "Pounds"]}
           values={["kg", "lbs"]}
         />
         <NumericInput
           name="bodyweight"
           unit={this.state.unit}
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
         />
         <NumericInput
           name="squat"
           unit={this.state.unit}
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
         />
         <NumericInput
           name="bench"
           unit={this.state.unit}
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
         />
         <NumericInput
           name="deadlift"
           unit={this.state.unit}
-          update={this.updateState.bind(this)}
+          onChange={this.updateState}
         />
         <button type="submit" className="ui button">
           Submit
