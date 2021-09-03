@@ -1,0 +1,7 @@
+{
+    "app_id": "github_test-knsph",
+    "config_version": 20210101,
+    "name": "GitHub_Test",
+    "location": "US-VA",
+    "deployment_model": "LOCAL"
+}
