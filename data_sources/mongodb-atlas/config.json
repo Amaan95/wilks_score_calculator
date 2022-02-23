@@ -3,6 +3,13 @@
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "TestCluster1",
+        "namespacePreimageConfigs": [
+            {
+                "collectionName": "comments",
+                "dbName": "sample_mflix",
+                "recordPreimages": true
+            }
+        ],
         "readPreference": "primary",
         "wireProtocolEnabled": false
     },
