@@ -1,19 +1,19 @@
 {
-    "id": "62179bb6c186b5e3a61d42d8",
-    "name": "fasfafe",
+    "id": "6217c8d74169e7a53266d7a0",
+    "name": "sdgseg",
     "type": "DATABASE",
     "config": {
         "operation_types": [
             "UPDATE",
             "INSERT"
         ],
-        "database": "sample_supplies",
-        "collection": "sales",
+        "database": "sample_training",
+        "collection": "grades",
         "service_name": "mongodb-atlas",
         "match": {},
         "project": {},
         "full_document": true,
-        "full_document_before_change": true,
+        "full_document_before_change": false,
         "unordered": false
     },
     "disabled": false,
