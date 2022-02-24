@@ -1,14 +1,14 @@
 {
-    "id": "62167dbf56ac07bec8e6d100",
-    "name": "testTrigger",
+    "id": "62179bb6c186b5e3a61d42d8",
+    "name": "fasfafe",
     "type": "DATABASE",
     "config": {
         "operation_types": [
-            "INSERT",
-            "UPDATE"
+            "UPDATE",
+            "INSERT"
         ],
-        "database": "sample_mflix",
-        "collection": "comments",
+        "database": "sample_supplies",
+        "collection": "sales",
         "service_name": "mongodb-atlas",
         "match": {},
         "project": {},

@@ -5,8 +5,8 @@
         "clusterName": "TestCluster1",
         "namespacePreimageConfigs": [
             {
-                "collectionName": "comments",
-                "dbName": "sample_mflix",
+                "collectionName": "sales",
+                "dbName": "sample_supplies",
                 "recordPreimages": true
             }
         ],
