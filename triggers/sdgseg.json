@@ -1,5 +1,5 @@
 {
-    "id": "6217c8d74169e7a53266d7a0",
+    "id": "6217c8ecfe083c5a77f7151d",
     "name": "sdgseg",
     "type": "DATABASE",
     "config": {
@@ -13,7 +13,7 @@
         "match": {},
         "project": {},
         "full_document": true,
-        "full_document_before_change": false,
+        "full_document_before_change": true,
         "unordered": false
     },
     "disabled": false,
