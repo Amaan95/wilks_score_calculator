@@ -3,13 +3,6 @@
     "type": "mongodb-atlas",
     "config": {
         "clusterName": "TestCluster1",
-        "namespacePreimageConfigs": [
-            {
-                "collectionName": "grades",
-                "dbName": "sample_training",
-                "recordPreimages": true
-            }
-        ],
         "readPreference": "primary",
         "wireProtocolEnabled": false
     },
