@@ -3,12 +3,12 @@
     "database": "sample_geospatial",
     "roles": [
         {
-            "name": "readAll",
+            "name": "someDiffRole",
             "apply_when": {},
             "read": true,
-            "write": false,
+            "write": true,
             "insert": false,
-            "delete": false,
+            "delete": true,
             "search": true
         }
     ]
