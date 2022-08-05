@@ -1,0 +1,24 @@
+{
+    "collection": "accounts",
+    "database": "sample_analytics",
+    "filters": [
+        {
+            "name": "asdfasdf",
+            "query": {},
+            "apply_when": {}
+        }
+    ],
+    "roles": [
+        {
+            "name": "denyAllAccess",
+            "apply_when": {
+                "some": "expression"
+            },
+            "read": true,
+            "write": true,
+            "insert": false,
+            "delete": true,
+            "search": false
+        }
+    ]
+}

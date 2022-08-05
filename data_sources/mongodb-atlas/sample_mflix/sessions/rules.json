@@ -1,0 +1,15 @@
+{
+    "collection": "sessions",
+    "database": "sample_mflix",
+    "roles": [
+        {
+            "name": "denyAllAccess",
+            "apply_when": {},
+            "read": false,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "search": false
+        }
+    ]
+}

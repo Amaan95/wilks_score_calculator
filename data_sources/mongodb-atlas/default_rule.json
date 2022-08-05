@@ -1,0 +1,21 @@
+{
+    "filters": [
+        {
+            "name": "alsjdfklasdf",
+            "query": {},
+            "apply_when": {}
+        }
+    ],
+    "id": "62ed50d1da79438c3eeb6d1a",
+    "roles": [
+        {
+            "name": "readAll",
+            "apply_when": {},
+            "read": true,
+            "write": false,
+            "insert": false,
+            "delete": false,
+            "search": true
+        }
+    ]
+}

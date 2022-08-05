@@ -3,5 +3,9 @@
     "config_version": 20210101,
     "name": "Application-2",
     "location": "US-VA",
-    "deployment_model": "LOCAL"
+    "provider_region": "aws-us-east-1",
+    "deployment_model": "LOCAL",
+    "allowed_request_origins": [
+        "https://example.com"
+    ]
 }
