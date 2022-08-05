@@ -1,0 +1,15 @@
+{
+    "collection": "newDB",
+    "database": "newCollTest",
+    "roles": [
+        {
+            "name": "someDiffRole",
+            "apply_when": {},
+            "read": true,
+            "write": true,
+            "insert": false,
+            "delete": true,
+            "search": true
+        }
+    ]
+}
