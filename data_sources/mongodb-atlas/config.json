@@ -7,7 +7,7 @@
             {
                 "collectionName": "customers",
                 "dbName": "sample_analytics",
-                "recordPreimages": true
+                "recordPreimages": false
             }
         ],
         "readPreference": "primary",
