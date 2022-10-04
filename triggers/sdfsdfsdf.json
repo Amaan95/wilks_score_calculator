@@ -1,0 +1,28 @@
+{
+    "id": "633c6d4b010cb5ecea1f5c39",
+    "name": "sdfsdfsdf",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "UPDATE",
+            "DELETE"
+        ],
+        "database": "sample_analytics",
+        "collection": "customers",
+        "service_name": "mongodb-atlas",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": true,
+        "unordered": false,
+        "skip_catchup_events": true
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "myFunc"
+            }
+        }
+    }
+}
